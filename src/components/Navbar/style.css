@@ -1,0 +1,27 @@
+.navbar {
+  padding: 5px;
+  box-shadow: 1px 1px 20px 1px #aaa;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Bowlby One SC", cursive;
+}
+
+.navbar-logo h1 span {
+  color: #ff4e6a;
+}
+
+.navbar-logo img {
+  width: 70px;
+  height: 70px;
+}
