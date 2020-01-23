@@ -10,7 +10,6 @@
 }
 
 .navbar-logo {
-  width: fit-content;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,4 +23,46 @@
 .navbar-logo img {
   width: 70px;
   height: 70px;
+}
+
+.user-item-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.fa-align-justify {
+  padding: 10px;
+  color: #aaa;
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 930px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-item-navbar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: block;
+  }
+
+  .fa-align-justify {
+    display: block;
+  }
 }

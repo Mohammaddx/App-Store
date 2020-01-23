@@ -1,13 +1,18 @@
 .navbar-user {
   padding: 5px;
 }
-.container {
+.navbar-user .container {
   display: flex;
   justify-content: space-between;
   justify-items: center;
   align-items: center;
 }
 
+.navbar-image,
+.navbar-user,
+.navbar-notefications {
+  padding: 5px 20px;
+}
 .navbar-image img {
   width: 40px;
   height: 40px;
@@ -16,12 +21,7 @@
   cursor: pointer;
 }
 
-.navbar-cart,
-.navbar-notefictions {
-  padding: 5px 40px;
-}
-
-i {
+.navbar-user i {
   color: #aaa;
   cursor: pointer;
   font-size: 25px;
@@ -36,4 +36,13 @@ sup {
   position: relative;
   top: -10px;
   left: -5px;
+}
+
+@media (max-width: 930px) {
+  .navbar-user .container {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 50px;
+  }
 }

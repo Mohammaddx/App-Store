@@ -5,6 +5,8 @@
 ul {
   list-style-type: none;
   padding: 5px;
+  text-align: center;
+  width: 100%;
 }
 
 li {
@@ -12,4 +14,16 @@ li {
   padding: 5px 10px;
   text-transform: uppercase;
   color: #283031;
+}
+
+ul li .active {
+  color: #ff4e6a;
+}
+
+@media (max-width: 930px) {
+  ul li {
+    display: block;
+    line-height: 60px;
+    font-size: 20px;
+  }
 }
